@@ -173,7 +173,7 @@ export default async function Home() {
       {/* Footer */}
       <footer className="border-t px-4 py-8">
         <div className="mx-auto max-w-7xl text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Link Shortener. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Link Shortener. All rights reserved.</p>
         </div>
       </footer>
     </div>
