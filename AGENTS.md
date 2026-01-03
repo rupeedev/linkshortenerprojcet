@@ -15,9 +15,9 @@ This document provides comprehensive guidelines for AI agents and LLMs working o
 
 Before generating ANY code, you MUST:
 
-1. **READ the relevant documentation files** in the `/docs` directory that apply to your task
+1. **READ the relevant instruction files** in the `/.github/instructions` directory that apply to your task
 2. **FOLLOW the patterns and guidelines** specified in those files
-3. **DO NOT proceed** with code generation until you have reviewed the applicable documentation
+3. **DO NOT proceed** with code generation until you have reviewed the applicable instruction files
 
 This is **NOT OPTIONAL**. Failure to read the relevant documentation before generating code will result in:
 
@@ -26,21 +26,21 @@ This is **NOT OPTIONAL**. Failure to read the relevant documentation before gene
 - Inconsistent UI components that don't match the project's design system
 - Wasted time fixing preventable mistakes
 
-### Required Documentation by Topic
+### Required Instruction Files (by topic)
 
-For detailed guidelines on specific topics, refer to the modular documentation in the `/docs` directory. ALWAYS refer to the relevant .md file BEFORE generating any code:
+For detailed guidelines on specific topics, refer to the instruction files in `/.github/instructions`. ALWAYS refer to the relevant file BEFORE generating any code. Typical files in that directory include:
 
-Consult these files based on the task at hand:
-
-- **🔐 [Authentication Guidelines](docs/authentication.md)** - **MUST READ** before implementing any authentication, route protection, user data access, or auth-related features
-- **🔐 [Authentication (Clerk) Guidelines](docs/authentication-clerk.md)** - **MUST READ** before implementing any authentication, route protection, user data access, or auth-related features
-- **🎨 [UI Components Guidelines](docs/ui-components.md)** - **MUST READ** before creating or installing any UI components, forms, buttons, or styled elements
+- `authentication.instructions.md` — **MUST READ** before implementing authentication, route protection, user data access, or auth-related features
+- `authentication-clerk.instructions.md` — **MUST READ** before implementing Clerk-specific authentication features
+- `data-fetching.instructions.md` — **MUST READ** for data access and fetching patterns
+- `server-actions.instructions.md` — **MUST READ** before implementing or modifying server actions that perform data mutations
+- `ui-components.instructions.md` — **MUST READ** before creating or installing UI components, forms, buttons, or styled elements
 
 **Workflow:**
 
 1. Identify what you need to implement
-2. Read the corresponding documentation file(s) completely
-3. Apply the patterns and guidelines from the documentation
+2. Read the corresponding instruction file(s) completely
+3. Apply the patterns and guidelines from the instruction files
 4. Only then generate code
 
 ## Project Overview
