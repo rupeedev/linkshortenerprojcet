@@ -56,7 +56,7 @@ export default function RootLayout({
           headerTitle: "text-foreground",
           headerSubtitle: "text-muted-foreground",
           formButtonPrimary: "bg-primary text-primary-foreground hover:bg-primary/90 transition-colors",
-          formFieldInput: "border-input focus:border-ring focus:ring-ring/20 transition-colors",
+          formFieldInput: "border-input focus:border-ring focus:ring-2 focus:ring-ring/20 transition-colors",
           footerActionLink: "text-primary hover:text-primary/80 transition-colors",
           identityPreviewText: "text-foreground",
           identityPreviewEditButton: "text-primary hover:text-primary/80",
