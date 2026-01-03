@@ -55,18 +55,15 @@ export default function RootLayout({
           card: "shadow-lg",
           headerTitle: "text-foreground",
           headerSubtitle: "text-muted-foreground",
-          formButtonPrimary: 
-            "bg-primary text-primary-foreground hover:bg-primary/90 transition-colors",
-          formFieldInput: 
-            "border-input focus:border-ring focus:ring-ring/20 transition-colors",
+          formButtonPrimary: "bg-primary text-primary-foreground hover:bg-primary/90 transition-colors",
+          formFieldInput: "border-input focus:border-ring focus:ring-ring/20 transition-colors",
           footerActionLink: "text-primary hover:text-primary/80 transition-colors",
           identityPreviewText: "text-foreground",
           identityPreviewEditButton: "text-primary hover:text-primary/80",
           formFieldLabel: "text-foreground font-medium",
           dividerLine: "bg-border",
           dividerText: "text-muted-foreground",
-          socialButtonsBlockButton: 
-            "border-input hover:bg-accent hover:text-accent-foreground transition-colors",
+          socialButtonsBlockButton: "border-input hover:bg-accent hover:text-accent-foreground transition-colors",
           socialButtonsBlockButtonText: "text-foreground font-medium",
           formFieldInputShowPasswordButton: "text-muted-foreground hover:text-foreground",
           footer: "hidden",
