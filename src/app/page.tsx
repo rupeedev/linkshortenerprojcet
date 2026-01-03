@@ -1,7 +1,6 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
-import { Button } from "@/components/ui/button";
+import HeroAuthButtons from "@/components/HeroAuthButtons";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link2, BarChart3, Shield, Zap, Users, Clock } from "lucide-react";
 
@@ -25,18 +24,7 @@ export default async function Home() {
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground sm:text-xl md:text-2xl">
             Create short, memorable links in seconds. Track clicks, analyze performance, and share with confidence.
           </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <SignUpButton mode="modal">
-              <Button size="lg" className="w-full sm:w-auto">
-                Get Started Free
-              </Button>
-            </SignUpButton>
-            <SignInButton mode="modal">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                Sign In
-              </Button>
-            </SignInButton>
-          </div>
+          <HeroAuthButtons />
         </div>
       </section>
 
@@ -162,11 +150,7 @@ export default async function Home() {
           <p className="mb-8 text-lg text-muted-foreground sm:text-xl">
             Join thousands of users who trust us with their links. Start shortening today!
           </p>
-          <SignUpButton mode="modal">
-            <Button size="lg" className="w-full sm:w-auto">
-              Create Your Free Account
-            </Button>
-          </SignUpButton>
+          <HeroAuthButtons />
         </div>
       </section>
 

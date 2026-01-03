@@ -39,7 +39,6 @@ export default function RootLayout({
           colorWarning: "hsl(var(--chart-4))",
           colorNeutral: "hsl(var(--muted))",
           colorTextOnPrimaryBackground: "hsl(var(--primary-foreground))",
-          colorAlphaShade: "hsl(var(--muted))",
           fontFamily: "var(--font-geist-sans)",
           fontFamilyButtons: "var(--font-geist-sans)",
           fontSize: "1rem",
@@ -52,7 +51,8 @@ export default function RootLayout({
           borderRadius: "var(--radius)",
         },
         elements: {
-          card: "shadow-lg",
+          card: "!bg-black !text-white !border !border-white !shadow-2xl",
+          modal: "!bg-black !text-white !border !border-white !shadow-2xl",
           headerTitle: "text-foreground",
           headerSubtitle: "text-muted-foreground",
           formButtonPrimary: "bg-primary text-primary-foreground hover:bg-primary/90 transition-colors",
